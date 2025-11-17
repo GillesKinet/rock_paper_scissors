@@ -65,3 +65,6 @@ function playGame() {
     alert(`You lose with ${humanScore} vs ${computerScore} points!`);
   } else alert(`It's a tie you both have scored ${humanScore} points!`);
 }
+
+const playGameButton = document.getElementById("start-game");
+playGameButton.addEventListener("click", playGame);
