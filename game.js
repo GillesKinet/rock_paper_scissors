@@ -52,3 +52,16 @@ function playRound(humanChoice, computerChoice) {
     }
   }
 }
+
+function playGame() {
+  let count = 0;
+  while (count < 5) {
+    playRound();
+    count++;
+  }
+  if (humanScore > computerScore) {
+    alert(`You win with ${humanScore} vs ${computerScore} points :) !`);
+  } else if (humanScore < computerScore) {
+    alert(`You lose with ${humanScore} vs ${computerScore} points!`);
+  } else alert(`It's a tie you both have scored ${humanScore} points!`);
+}
