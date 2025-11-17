@@ -18,6 +18,8 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
+  humanChoice = getHumanChoice();
+  computerChoice = getComputerChoice();
   const humanChoiceLower = humanChoice.toLowerCase();
   const humanWins = "You win, the computer loses!";
   const computerWins = "You lose, the computer wins!";
