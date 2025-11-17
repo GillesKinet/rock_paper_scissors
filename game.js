@@ -7,3 +7,8 @@ function getComputerChoice() {
   choice = number <= 0.33 ? "rock" : number <= 0.66 ? "paper" : "scissors";
   return choice;
 }
+
+function getHumanChoice() {
+  const choice = prompt("Please select rock, paper or scissors");
+  return choice;
+}
